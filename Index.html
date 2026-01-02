@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div class="welcome-container">
+        <div class="welcome-box">
+            <h1>🎉 Ready, Set, Go! 🎉</h1>
+            <img src="images/owl-with-books.png" alt="Fun Quiz Owl" class="welcome-image">
+            <button id="startQuizBtn">Start the Fun</button>
+        </div>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container">
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="question"></div>
+        <div class="question-image"><img id="questionImage" src="" alt=""></div>
+        <div class="options"></div>
+    </div>
+
+<!-- Result Screen -->
+<div class="result-container">
+    <div class="result-box">
+        <div class="result-score animated-rainbow" id="score"></div>
+
+        <div class="result-message-container">
+            <div class="result-message"></div>
+        </div>
+        <img src="images/results.png" alt="Result Owl" class="result-image">
+        <button class="restart-btn">Let’s Go Again!</button>
+    </div>
+</div>
+
+
+    <!-- Scripts -->
+    <script src="quizData.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
